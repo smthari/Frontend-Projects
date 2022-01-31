@@ -1,6 +1,6 @@
 # FRONTEND PROJECTS 
 
-Tools are added frequently! ⚡
+Projects are added frequently! ⚡
 
 Enjoy!
 
