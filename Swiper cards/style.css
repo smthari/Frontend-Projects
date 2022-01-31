@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #111;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-card {
+    background: linear-gradient(90deg,
+            rgba(157, 168, 238, 1) 0%,
+            rgba(205, 227, 241, 1) 39%,
+            rgba(255, 255, 255, 1) 99%);
+    box-shadow: 6px 7px 8px -7px #8a93fb;
+    margin: 0 40px;
+    padding: 45px 63px;
+    border-radius: 20px;
+    border: 0;
+    cursor: grab;
+}
+
+.slide-card .slide-card-img-top {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #8a86e8;
+    width: 100px;
+    height: 100px;
+}
+
+.slide-card h5 {
+    color: #3345c6;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.slide-card h5 span {
+    font-size: 18px;
+    color: #111;
+}
+
+.slide-card p {
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+/* transform active card  */
+/* .swiper-slide.swiper-slide-active {
+    transform: scale(1.2);
+} */

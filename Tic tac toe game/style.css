@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 65px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #111;
+  font-size: 8vw;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: lightblue;
+}
+
+.gameinfo {
+  padding: 0 34px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 0;
+  /* width: 100px; */
+  transition: 0.5s ease-in-out;
+}
+
+.imgwidth {
+  width: 250px;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+
+.reset-btn {
+  width: 80px;
+  margin: 15px;
+  font-size: 20px;
+  font-family: "Baloo Bhaina 2", cursive;
+  background-color: lightblue;
+}
+
+.line {
+  height: 5px;
+  width: 0;
+  position: absolute;
+  background-color: #911d91;
+  transition: width 0.5s ease-in-out;
+}
+
+.linewidth {
+  height: 5px;
+  width: calc(1rem + 20vw);
+  position: absolute;
+  background-color: #911d91;
+  transition: width 0.5s ease-in-out;
+}
+
+.linewidthremove {
+  width: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .gameContainer {
+    display: block;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .container {
+    margin-left: 12.5%;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+  .gameinfo {
+    padding: 85px 50px;
+    text-align: center;
+  }
+  .linewidth {
+    /* margin-top: 20px; */
+    margin: auto;
+    width: calc(0em + 50vw);
+  }
+  .imgbox {
+    margin-top: 20px;
+  }
+  /* .imgbox img {
+    width: 0;
+  } */
+  .imgwidth {
+    width: 150px;
+  }
+}
