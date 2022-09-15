@@ -53,11 +53,12 @@ input[type="password"] {
   width: 280px;
   height: 45px;
   margin: 15px;
-  border-radius: 25px;
+  border-radius: 13px;
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
   font-family: "Scheherazade New", serif;
+  font-weight: bold;
 }
 
 input[type="checkbox"] {
@@ -101,8 +102,12 @@ button {
   cursor: pointer;
   color: #ffffff;
   border: none;
-  background: rgba(135, 113, 224, 0.89);
+  background: rgb(71 33 224 / 89%);
   border-radius: 25px;
+}
+
+button:hover{
+  background-color: rgba(117, 87, 239, 0.89);
 }
 
 .link {
@@ -112,8 +117,14 @@ button {
   color: #71a1bd;
   font-family: "Scheherazade New", serif;
   font-weight: bold;
+  font-size: 18px;
   text-decoration: none;
 }
+
+.link:hover{
+  text-decoration: underline;
+}
+  
 
 @media only screen and (max-width: 700px) {
   .contact-container {
