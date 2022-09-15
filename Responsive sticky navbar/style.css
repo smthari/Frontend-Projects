@@ -37,6 +37,12 @@ body {
   --svgcolor: #fff;
 }
 
+/* .smalllogo .logolink h1{
+  font-family: 'Roboto Mono', monospace;
+} */
+
+
+
 .nav {
   height: 5rem;
   width: 100%;
@@ -49,6 +55,18 @@ body {
   position: fixed;
 }
 
+.nav::before{
+  content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(87 86 86);
+    opacity: 0.4;
+    z-index: -1;
+}
+
 .nav__list {
   /* list-style: none;
   display: flex;
@@ -57,12 +75,17 @@ body {
   margin-top: -49px;
   padding: 0vh 4vw; */
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  /* margin-left: 55vh; */
-  margin-top: -49px;
-  /* margin: auto; */
-  padding: 0vh 4vw;
+    /* margin: 21px 0px; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 55vh; */
+    margin-top: -54px;
+    /* margin: auto; */
+    padding: 0vh 4vw;
+}
+
+.nav__list a{
+  font-family: 'Roboto Mono', monospace;
 }
 
 .nav__link {
@@ -119,6 +142,10 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   /* margin-top: 7px;*/
+}
+
+.logo h1{
+  font-family: 'Roboto Mono', monospace;
 }
 
 .smalllogo {
