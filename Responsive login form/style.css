@@ -22,6 +22,7 @@
   background: #ffffff;
   border-radius: 25px;
   text-align: center;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -47,7 +48,7 @@ input[type="password"] {
   outline: none;
   background: none;
   font-size: 20px;
-  color: #85b6ff;
+  color: #6395e0;
   padding: 20px 10px 20px 5px;
   border: 2px solid #568aee;
   width: 280px;
@@ -70,7 +71,7 @@ input[type="checkbox"] {
 }
 
 ::placeholder {
-  color: #85b6ff;
+  color: #7ba7eb;
   font-size: 18px;
 }
 
@@ -83,7 +84,7 @@ input[type="checkbox"] {
 
 .keepme {
   margin: 15px;
-  color: #71a1bd;
+  color: #4f82a0;
   font-family: "Scheherazade New", serif;
   font-weight: bold;
 }
@@ -103,16 +104,27 @@ button {
   border: none;
   background: rgba(135, 113, 224, 0.89);
   border-radius: 25px;
+  transition: 0.3s;
+  box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
 }
-
+button:hover{
+  background: rgba(115, 88, 223, 0.89);
+  box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+}
 .link {
   text-align: center;
   display: block;
   margin: 18px;
-  color: #71a1bd;
+  color: #4f82a0;
   font-family: "Scheherazade New", serif;
   font-weight: bold;
   text-decoration: none;
+  transition: 0.3s;
+}
+.link:hover{
+  color: #2d6f96;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 700px) {
