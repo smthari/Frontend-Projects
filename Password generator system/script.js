@@ -58,7 +58,11 @@ function generatePassword(lower, upper, number, symbol, length) {
       (item) => Object.values(item)[0]
     );
     // console.log(typesArr);
-  
+
+    // protection when all boxes are unchecked
+  	if (typesArr == false) {
+      return "Check at least one box";
+    } else {
     // creating a loop for calling generator function for each type
     for (let i = 0; i < length; i += typesCount) {
       typesArr.forEach((type) => {
@@ -66,6 +70,7 @@ function generatePassword(lower, upper, number, symbol, length) {
         generatedPassword += randomFunc[funcName]();
       });
     }
+  }
   
     // slicing password from 0 to length
     const finalPassword = generatedPassword.slice(0, length);
