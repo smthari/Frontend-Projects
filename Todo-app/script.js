@@ -103,7 +103,7 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-// select entire list
+// select entire List
 const list = document.querySelector(".js-todo-list");
 list.addEventListener("click", (event) => {
   if (event.target.classList.contains("js-tick")) {
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
+// fetch the   them in input
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
