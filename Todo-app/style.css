@@ -111,13 +111,16 @@ color: var(--color);
 
 .container {
 width: 100%;
-max-width: 700px;
+max-width: 800px;
 margin: 0 auto;
 padding-left: 10px;
 padding-right: 10px;
 color: var(--color);
 margin: auto;
 padding-top: 4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .app-title {
@@ -228,6 +231,7 @@ margin-bottom: 20px;
 .empty-state__title,
 .empty-state__description {
 /* margin-bottom: 20px; */
+flex-shrink: 0;
 font-size: 25px;
 text-align: center;
 margin: 2rem;
@@ -263,4 +267,31 @@ right: -1rem;
 em {
 display: none;
 }
+}
+
+
+.btn {
+    position: relative; 
+    margin-left: 10px; 
+    margin-top: 0.3rem;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color: #007bff; 
+    color: #fff; 
+    border: 2px solid #007bff; 
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+}
+
+input[type="text"] {
+    
+    padding: 10px;
+    border-radius: 4px;
+    border: 3px solid #333;
 }

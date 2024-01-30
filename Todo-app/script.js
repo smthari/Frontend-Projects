@@ -40,9 +40,6 @@ function renderTodo(todo) {
   } else {
     list.append(newlist);
   }
-
-  /* // disabled this after fixing a selection bug
-                list.append(newlist); */
 }
 
 // function for adding a todo
@@ -58,11 +55,6 @@ function myFunction(x) {
   demoarray.push(todoobject);
 
   renderTodo(todoobject);
-  console.log(demoarray);
-
-  /* disabled this because updated it show in list  */
-  /* // print demoarray in console
-                console.log(demoarray); */
 }
 
 function toggleDone(b) {
