@@ -112,6 +112,8 @@ form {
   margin-top: 15%;
   margin-left: 7%;
   position: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 .name,
@@ -146,5 +148,18 @@ input[type="tel"] {
 }
 
 .submitbtn {
-  display: none;
+  padding: 12px 24px;
+  margin-right: 50%;
+  margin-left: 25%;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitbtn:hover {
+  background-color: #0056b3;
 }
