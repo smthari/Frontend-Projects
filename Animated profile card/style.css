@@ -1,4 +1,5 @@
 /* center card  */
+
 body {
     margin: 0;
     font-family: tahoma;
@@ -19,6 +20,7 @@ body {
     position: relative;
     box-shadow: 20px 20px 42px #d0d0d0, -20px -20px 42px #ffffff;
     width: 20rem;
+    box_radius: 20px 0px 20px 0px 20px;
   }
   
   /* porfile image section  */
@@ -51,6 +53,7 @@ body {
   
   .card:hover .picture::before {
     height: 100%;
+      color: red;
   }
   
   .card .picture::after {
