@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cbc9c9;
+}
+
+.container{
+    background-color: #091f43;
+    padding: 2rem;
+    border-radius: 20px;
+    font-family: Poppins;
+    color: white;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1{
+    font-family: Poppins;
+    margin-bottom: 20px;
+}
+
+form input{
+    border: none;
+    background-color: #cbc9c9;
+    height: 2rem;
+    width: 30vh;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+button{
+    border: none;
+    height: auto;
+    min-width: 2vh;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+    background-color: #ff1e43;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #ff1e43;
+        border: 2px solid;
+        border-color: #ff1e43;
+    }
+}
+
+i{
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.weather{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(210, 210, 255);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    color: black;
+    box-shadow: 2px 2px 15px 2px rgb(255, 255, 255, 0.4);
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.card h1{
+    color: rgb(193, 58, 9);
+}
+
+.country{
+    background-color: rgb(69, 122, 157);
+    color: white;
+    max-width: fit-content;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+}
+
+.hide{
+    display: none;
+}

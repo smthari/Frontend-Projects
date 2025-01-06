@@ -1,0 +1,86 @@
+*{
+    background-color: rgb(1, 1, 54);
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.heading{
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 
+    0 0 5px #ff00ff, 
+    0 0 10px #ff00ff,
+    0 0 15px #ff00ff;
+    font-size: 60px;
+}
+
+p{
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.container{
+    width: 420px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 5px #ff00ff);
+}
+
+.box{
+    height: 130px;
+    width: 130px;
+    border: none;
+    background-color: rgb(1, 1, 54);
+    margin: 5px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px #ff00ff);
+    color: white;
+    font-size: 80px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.msg{
+    height: 50px;
+    width: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 900;
+    color: white;
+}
+
+.play button{
+    padding: 10px;
+    width: 200px;
+    margin: 30px;
+    border: 0px solid black;
+    border-radius: 10px;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    box-shadow: 
+    0 0 10px #ff00ff;
+}
+
+.play button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #ff00ff;
+}
+
+.hide{
+    display: none;
+}

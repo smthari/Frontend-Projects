@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<link rel="stylesheet" href="human.css">
+
+<body>
+    <div class="heading"><a href="index.html"><center>Tic Tac Toe</center></a></div>
+
+    <form target="game.html">
+    <div class="players"><center>
+        Player 1: <input type="text" id="p1" required><br>
+        Player 2: <input type="text" id="p2" required>
+    </center></div>
+
+    
+    <div class="choose">
+        <div class="cross">
+            Player 1
+            <img src="cross.png" id="cross">
+        </div>
+        <div class="swap"><img src="swap.png" id="swap"><br>
+            Swap
+        </div>
+        <div class="circle">
+            Player 2
+            <img src="circle.png" id="circle">
+        </div>
+    </div>
+
+    <center><a href="game.html"><button id="play" type="button">Play !</button></a></center>
+    </form>
+
+<script src="human.js"></script>
+</body>
+</html>
