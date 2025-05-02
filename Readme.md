@@ -22,3 +22,42 @@ If you like this repo, be sure to ⭐ it.
 | 08  | [Password Generator](https://github.com/smthari/Frontend-Projects/tree/master/Password%20generator%20system)| [Live Demo](https://password-generator-system.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
 | 09  | [Swiper Cards](https://github.com/smthari/Frontend-Projects/tree/master/Swiper%20cards)| [Live Demo](https://swiper-card.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
 | 10  | [Todo App](https://github.com/smthari/Frontend-Projects/tree/master/Todo-app)| [Live Demo](https://responsive-todoapp.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
+
+
+ In the slide show project, I reduced the size of javascript code for the same output.
+
+<pre> <script>
+    
+  let slideIndex = 1;
+
+   
+const slides = document.getElementsByClassName("mySlides");
+
+
+   
+function showSlides(n) {
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  for (let slide of slides) slide.style.display = "none";
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+showSlides(slideIndex);
+
+
+document.addEventListener("contextmenu", e => e.preventDefault());
+document.onkeydown = e => {
+  if (
+    e.keyCode === 123 || // F12
+    (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
+    (e.ctrlKey && e.keyCode === 85) 
+  ) {
+    return false;
+  }
+}
+  </script>  </pre> 
