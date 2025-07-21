@@ -58,6 +58,10 @@ function myFunction(x) {
   demoarray.push(todoobject);
 
   renderTodo(todoobject);
+  
+  // ✅ Show alert to user
+  alert("Todo added!");
+
   console.log(demoarray);
 
   /* disabled this because updated it show in list  */
@@ -79,6 +83,11 @@ function deleteTodo(c) {
   };
   demoarray = demoarray.filter((myitem) => myitem.id !== Number(c));
   renderTodo(emptytodo);
+
+  
+  // ✅ Show alert
+  alert("Todo deleted!");
+  
 }
 
 // select form
@@ -151,4 +160,3 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
-
