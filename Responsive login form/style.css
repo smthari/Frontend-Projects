@@ -7,119 +7,107 @@
   box-sizing: border-box;
 }
 
-.contact-container {
-  background-image: url(images/bg.svg);
-  background-size: cover;
-  height: 100vh;
+body {
+  background-color: rgb(197, 233, 255);
 }
 
-.right {
-  position: absolute;
-  width: 360px;
-  left: 60%;
-  height: 580px;
-  top: calc(50% - 580px / 2);
-  background: #ffffff;
-  border-radius: 25px;
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15%; */
+}
+.right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
   text-align: center;
 }
-
-.title {
-  font-family: Sansation;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 145px;
+.title{
+  font-size: 3em;
+  display: inline-block;
+  line-height: 1em;
+  font-family: 'Scheherazade New', sans-serif;
+  /* padding-block: .5em; */
+  
+}
+.logo{
+  width: 30%;
+}
+.form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  font-family: "Sansation", sans-serif;
-  color: #5754dd;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 15px
 }
+.username, .password{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: .5rem;
 
-.logo {
-  width: 120px;
-  height: 120px;
-  margin-top: -40px;
 }
-
-input[type="email"],
-input[type="password"] {
+.username input, .password input{
+  width: 100%;
+  height: 2em;
+  border: none;
+  background: transparent;
+}
+input::placeholder{
+  height: 1em;
+  color: gray;
   border: none;
   outline: none;
-  background: none;
-  font-size: 20px;
-  color: #85b6ff;
-  padding: 20px 10px 20px 5px;
-  border: 2px solid #568aee;
-  width: 280px;
-  height: 45px;
-  margin: 15px;
-  border-radius: 25px;
-  box-sizing: border-box;
-  text-align: center;
-  overflow: hidden;
-  font-family: "Scheherazade New", serif;
+  background: transparent;
 }
-
-input[type="checkbox"] {
-  vertical-align: middle;
-  margin-right: 3px;
-  margin-bottom: 3px;
-  font-weight: bold;
-  height: 18px;
-  width: 18px;
+.keepme{
+  width: 100%;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+;
 }
-
-::placeholder {
-  color: #85b6ff;
-  font-size: 18px;
-}
-
-.icon {
-  position: absolute;
-  padding: 24px 32px;
-  height: 75px;
-  width: 90px;
-}
-
-.keepme {
-  margin: 15px;
-  color: #71a1bd;
-  font-family: "Scheherazade New", serif;
-  font-weight: bold;
-}
-
-button {
-  width: 260px;
-  height: 45px;
-  left: 1273px;
-  top: 780px;
-  font-family: "Sansation", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  cursor: pointer;
-  color: #ffffff;
+button{
+  width: 100%;
+  font-size: 1em;
+  font-weight: 400;
+  /* padding-inline: 5em; */
+  padding-block: 1em;
+  border-radius: 10px;
   border: none;
-  background: rgba(135, 113, 224, 0.89);
-  border-radius: 25px;
+  background-color: rgb(38, 140, 199);
+  color: white;
+  cursor: pointer;
+;
 }
+@media (max-width: 968px) {
+  .right{
+    width: 40%;
+    font-size: .8rem;
+    gap: 2em;
+  }
 
-.link {
-  text-align: center;
-  display: block;
-  margin: 18px;
-  color: #71a1bd;
-  font-family: "Scheherazade New", serif;
-  font-weight: bold;
-  text-decoration: none;
 }
-
-@media only screen and (max-width: 700px) {
-  .contact-container {
-    background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
-  }
-  .right {
-    left: calc(68% - 500px / 2);
-  }
+@media (max-width: 768px) {
+  .right{
+    width: 60%;
+    font-size: .6rem;
+    gap: 2em;
+  
 }

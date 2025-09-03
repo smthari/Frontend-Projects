@@ -1,9 +1,16 @@
+:root {
+  --color-1 : #F7F7F7;
+  --color-2: #FCC61D;
+  --color-3: #C59560;
+  --color-4 : #3338A0;
+}
 /* center card  */
 body {
     margin: 0;
     font-family: tahoma;
     height: 100vh;
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
+    background-color: var(--color-4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +46,7 @@ body {
     width: 100%;
     height: 0;
     border-radius: 50%;
-    background-color: #1f1b1b;
+    background-color: var(--color-3);
     position: absolute;
     bottom: 135%;
     right: 0;
@@ -58,7 +65,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #1f1b1b;
+    background-color: var(--color-2);
     position: absolute;
     top: 0;
     left: 0%;
@@ -74,7 +81,7 @@ body {
     transition: all 0.9s ease 0s;
   }
   .card:hover .picture img {
-    box-shadow: 0 0 0 14px #f7f5ec;
+    box-shadow: 0 0 0 14px var(--color-1);
     transform: scale(0.7);
   }
   
@@ -89,7 +96,7 @@ body {
   .card .main-content .title {
     display: block;
     font-size: 15px;
-    color: #1f1b1b;
+    color: var(--color-4);
     text-transform: capitalize;
     margin: 5px 37px 0;
   }
@@ -108,7 +115,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #1f1f1b;
+    background-color: var(--color-3);
     position: absolute;
     /* 3.5 */
     bottom: -100px;
@@ -138,8 +145,8 @@ body {
   
   /* 3.4 */
   .card .social li a:hover {
-    color: #3e3b44;
-    background-color: #f7f5ec;
+    color: var(--color-3);
+    background-color: var(--color-4);
     transition: 0.5s;
   }
   
@@ -169,9 +176,10 @@ body {
   
   /* 4.4 */
   .skills ul li:hover {
-    background-color: #1f1b1b;
-    color: #fff;
+    background-color: var(--color-3);
+    color: var(--color-4);
     cursor: pointer;
-    transition: 0.5s;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
   }
   
