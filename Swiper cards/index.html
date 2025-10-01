@@ -25,6 +25,32 @@
         }
 
         .slide-card {
+    transition: all 0.4s ease;
+}
+
+.slide-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slide-card .slide-card-img-top {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.slide-card:hover .slide-card-img-top {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 25px rgba(138, 134, 232, 0.7);
+}
+
+.slide-card h5 {
+    transition: color 0.3s ease;
+}
+
+.slide-card:hover h5 {
+    color: #ff6600;
+}
+
+        .slide-card {
             background: linear-gradient(90deg,
                     rgba(157, 168, 238, 1) 0%,
                     rgba(205, 227, 241, 1) 39%,
