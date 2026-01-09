@@ -1,177 +1,155 @@
-/* center card  */
+/* RESET & BODY */
 body {
-    margin: 0;
-    font-family: tahoma;
-    height: 100vh;
-    background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* styling for card  */
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  width: 20rem;
+  padding: 30px 0 55px;
+  background: linear-gradient(145deg, #8dace4, #2a5298);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* PROFILE IMAGE */
+.card .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.card .picture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  z-index: -1;
+}
+
+.card .picture img {
+  width: 100%;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.card:hover .picture img {
+  transform: scale(0.8);
+  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN CONTENT */
+.card .main-content .name {
+  margin: 14px 0 4px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card .main-content .title {
+  font-size: 14px;
+  color: #cfd9ff;
+}
+
+/* SKILLS */
+.skills {
+  padding: 15px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 6px;
+  padding: 7px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.skills ul li:hover {
+  background: #646e71;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(80, 115, 125, 0.6);
+  cursor: pointer;
+}
+
+/* SOCIAL BAR */
+.card .social {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: 0.4s;
+}
+
+.card:hover .social {
+  bottom: 0;
+}
+
+.card .social li {
+  display: inline-block;
+}
+
+.card .social li a {
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.card .social li a:hover {
+  background: #acb1b2;
+  color: #000;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Mobile */
+@media (max-width: 480px) {
   .card {
-    padding: 30px 0 55px;
-    margin-bottom: 30px;
-    background-color: #f5f5f5;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 20px 20px 42px #d0d0d0, -20px -20px 42px #ffffff;
-    width: 20rem;
+    width: 100%;
+    max-width: 320px;
   }
-  
-  /* porfile image section  */
-  /* css for profile image and  fluid effect  */
-  
-  /* 1.2 */
+
   .card .picture {
-    display: inline-block;
-    height: 130px;
-    width: 130px;
-    z-index: 1;
-    position: relative;
-    border-radius: 20%;
+    width: 110px;
+    height: 110px;
   }
-  
-  .card .picture::before {
-    content: "";
-    width: 100%;
-    height: 0;
-    border-radius: 50%;
-    background-color: #1f1b1b;
-    position: absolute;
-    bottom: 135%;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
-    transform: scale(3);
-    transition: all 0.3s linear 0s;
-  }
-  
-  .card:hover .picture::before {
-    height: 100%;
-  }
-  
-  .card .picture::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #1f1b1b;
-    position: absolute;
-    top: 0;
-    left: 0%;
-    z-index: -1;
-  }
-  
-  /* 1.1 */
-  .card .picture img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    transform: scale(1);
-    transition: all 0.9s ease 0s;
-  }
-  .card:hover .picture img {
-    box-shadow: 0 0 0 14px #f7f5ec;
-    transform: scale(0.7);
-  }
-  
-  /* porfile image section  */
-  /* marin content section  */
-  /* 2.1 */
-  .card .main-content {
-    margin-bottom: -19px;
-  }
-  
-  /* 2.2 */
-  .card .main-content .title {
-    display: block;
-    font-size: 15px;
-    color: #1f1b1b;
-    text-transform: capitalize;
-    margin: 5px 37px 0;
-  }
-  
-  /* 2.3 */
-  .card .main-content .name {
-    padding: 0;
-    margin: 8px;
-    text-transform: uppercase;
-  }
-  
-  /* marin content section  */
-  /* social media section  */
-  /* 3.1 */
-  .card .social {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #1f1f1b;
-    position: absolute;
-    /* 3.5 */
-    bottom: -100px;
-    left: 0;
-    transition: all 0.5s ease 0s;
-  }
-  
-  /* 3.5 */
-  .card:hover .social {
-    bottom: 0;
-  }
-  
-  /* 3.2 */
-  .card .social li {
-    display: inline-block;
-  }
-  
-  /* 3.3 */
-  .card .social li a {
-    display: block;
-    padding: 10px;
-    font-size: 17px;
-    color: #fff;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
-  
-  /* 3.4 */
-  .card .social li a:hover {
-    color: #3e3b44;
-    background-color: #f7f5ec;
-    transition: 0.5s;
-  }
-  
-  /* skill section  */
-  /* 4.1 */
-  .skills {
-    text-align: left;
-    padding: 15px;
-  }
-  
-  /* 4.2 */
-  .skills ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* 4.3 */
+
   .skills ul li {
-    border: 1px solid #1f1b1b;
-    border-radius: 2px;
-    display: inline-block;
-    font-size: 12px;
-    margin: 0 7px 7px 0;
-    padding: 7px;
+    font-size: 11px;
+    padding: 6px 12px;
   }
-  
-  /* 4.4 */
-  .skills ul li:hover {
-    background-color: #1f1b1b;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.5s;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    max-width: 360px;
   }
-  
+}
