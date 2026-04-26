@@ -22,3 +22,4 @@ If you like this repo, be sure to ⭐ it.
 | 08  | [Password Generator](https://github.com/smthari/Frontend-Projects/tree/master/Password%20generator%20system)| [Live Demo](https://password-generator-system.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
 | 09  | [Swiper Cards](https://github.com/smthari/Frontend-Projects/tree/master/Swiper%20cards)| [Live Demo](https://swiper-card.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
 | 10  | [Todo App](https://github.com/smthari/Frontend-Projects/tree/master/Todo-app)| [Live Demo](https://responsive-todoapp.netlify.app/)| [Tutorial](https://codingbatch.gumroad.com/l/frontendprojects)
+| 11  | [Terminal Clock](https://github.com/sejihad/terminal-clock)| [Live Demo](https://sejihad.github.io/terminal-clock)|
