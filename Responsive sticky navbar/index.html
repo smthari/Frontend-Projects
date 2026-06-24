@@ -1,70 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<title>live</title>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Sumit | Portfolio</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Coding Sumit Portfolio Website">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS, JavaScript">
+    <meta name="author" content="Coding Sumit">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <button class="nav-toggle">
+
+    <!-- Header -->
+    <header class="header">
+
+        <!-- Mobile Menu Button -->
+        <button class="nav-toggle" aria-label="Open Navigation">
             <span class="hamburger"></span>
         </button>
+
+        <!-- Mobile Logo -->
         <div class="smalllogo">
-            <a href="#welcome-section" class="logolink">
-                <h2> <i class="fas fa-code"></i> coding sumit</h2>
+            <a href="#home-section" class="logolink">
+                <h2>
+                    <i class="fas fa-code"></i>
+                    Coding Sumit
+                </h2>
             </a>
         </div>
 
+        <!-- Navigation -->
         <nav class="nav" id="navbar">
+
             <div class="logo">
-                <a href="index.html" id="logo">
-                    <h1> <i class="fas fa-code" style="font-size: 20px;"></i> coding sumit</h1>
+                <a href="#home-section" id="logo">
+                    <h1>
+                        <i class="fas fa-code"></i>
+                        Coding Sumit
+                    </h1>
                 </a>
             </div>
 
+            <ul class="nav__list">
 
-            <ul class="nav__list" id="navlinkitems">
                 <li class="nav__item">
-                    <a href="#home-section" class="nav__link" id="home">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about-section" class="nav__link" id="about">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#skills-section" class="nav__link" id="service">Skills</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#projects-section" class="nav__link" id="work">Work</a>
+                    <a href="#home-section" class="nav__link">Home</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#contacts-section" class="nav__link" id="contact">Contact</a>
+                    <a href="#about-section" class="nav__link">About</a>
                 </li>
+
+                <li class="nav__item">
+                    <a href="#skills-section" class="nav__link">Skills</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#projects-section" class="nav__link">Projects</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contacts-section" class="nav__link">Contact</a>
+                </li>
+
             </ul>
 
         </nav>
+
     </header>
-    <section class="section one" id="home-section">
 
-    </section>
-    <section class="section two" id="about-section">
-
-    </section>
-    <section class="section three" id="skills-section">
-
-    </section>
-    <section class="section four" id="projects-section">
-
-    </section>
-    <section class="section five" id="contacts-section">
-
+    <!-- Hero Section -->
+    <section id="home-section" class="section hero">
+        <h1>Hello, I'm Coding Sumit</h1>
+        <p>Frontend Web Developer</p>
+        <a href="#projects-section" class="btn">View My Work</a>
     </section>
 
+    <!-- About Section -->
+    <section id="about-section" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about web development and enjoy creating
+            responsive websites using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="section">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section" class="section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <p>Built using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts-section" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: example@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Coding Sumit. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
